@@ -12,14 +12,21 @@
 </head>
 
 <body>
+ 
 
+
+    <style class="container center-align" ></style>
     <fieldset>
+        
         <legend>Formulário de Freelancer</legend>
         <label for="nome">Nome:<em>*</em></label> <br>
         <input type="text" id="nome" name="Nome" placeholder="Digite o seu Nome" required>
         <br>
         <label for="Sobrenome">Sobrenome:<em>*</em></label>
         <input type="text" id="sobrenome" name="Sobrenome" placeholder="Digite o seu Sobrenome" required>
+        <br>
+        <label for="tel">Telefone:<em>*</em></label> <br>
+        <input type="tel" id="telefone" name="Telefone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" placeholder="(DDD)9.9999-9999" required>
         <br>
         <label for="email">Email:<em>*</em></label>
         <input type="email" id="email" name="E-mail" placeholder="Digite o seu E-mail" required>
@@ -36,6 +43,14 @@
             <option value="frances">Francês</option>
         </select>
         <br>
+        <label>Quais Linguagens Você Prefere?</label>
+        <select class="browser-default ">
+            <option value="" disabled selected style="border-radius: 3px;">Selecione Uma linguagem</option>
+            <option value="portugues">Java</option>
+            <option value="ingles">C#</option>
+            <option value="espanhol">C++</option>
+            <option value="frances">PHP</option>
+        </select>
         <label for="arquivo">Protótipo(Requisitos):</label>
         <br>
         <div class="file-field input-field">
@@ -47,13 +62,13 @@
                 <input class="file-path validate" type="text" placeholder="Nenhum Aquivo Selecionado">
             </div>
         </div>
-
-        <label for="bancodeDados" id="bancodados" name="Banco de Dados">Banco de Dados:
-            <input name="BancodeDados" type="radio" />
+        <label for="bancodeDados" id="bancodados" name="BancodeDados">Banco de Dados:
+        <label>    
+            <input name="mysql" type="radio" />
             <span>mySQL |</span>
         </label>
         <label>
-            <input name="postergree" type="radio" />
+            <input name="postergree" type="radio"  />
             <span>posterGree |</span>
         </label>
         <label>
@@ -69,7 +84,6 @@
             <span>Outro</span>
         </label>
         <br>
-
         <label for="TurnoReunioes" id="turnoreunioes" name="Turno Para Reuniao">Turno Para Reuniões:<em>*</em>
             <label>
                 <input type="checkbox" /> <span>Manhã</span>
@@ -91,8 +105,8 @@
             <input type="submit" value="Enviar">
             <br>
             <input type="submit" value="Limpar">
-    </fieldset>
 
+    </fieldset>
 </body>
 
 </html>
